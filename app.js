@@ -4,8 +4,13 @@ let sizeNum = 16;
 function requestSize() {
     let size = '';
     size = prompt('How big do you want the grid?');
+    if (size > 100) {
+        alert('Sorry. Only numbers under 100 are allowed. Try another number');
+        requestSize();
+    } else {
     sizeNum = parseInt(size);
     return sizeNum;
+    }
 }
 
 // create a grid based on the size requested
