@@ -3,7 +3,7 @@ let sizeNum = 16;
 
 function requestSize() {
     let size = '';
-    size = prompt('How big do you want the grid?');
+    size = prompt('How big do you want the grid? Number between 1-100: ');
     if (size > 100) {
         alert('Sorry. Only numbers under 100 are allowed. Try another number');
         requestSize();
